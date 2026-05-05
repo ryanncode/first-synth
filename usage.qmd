@@ -1,0 +1,33 @@
+---
+title: "Licensing Models"
+---
+
+:::{.hero-section style="padding-top: 3rem; padding-bottom: 2rem;"}
+:::{.lead}
+First Synthesis LLC employs a dual-licensing structure for the Monist Engine. This ensures open access for fundamental mathematical research while providing robust commercial protections and integrations for enterprise AI alignment and formal verification firms.
+:::
+:::
+
+::::{.feature-grid}
+
+:::{.feature-card}
+### Open Source License
+
+**Type:** AGPLv3 (Placeholder)
+
+Committed to open mathematical research. The Monist Engine's core components are available for academic researchers and individuals building non-commercial tools. Any derived work must also be open-sourced under identical terms.
+:::
+  
+:::{.feature-card}
+### Commercial License
+
+**Type:** First Synth Enterprise Proprietary
+
+Designed for enterprises integrating First Synth technology into proprietary products, closed-source AI architectures, and commercial verifiers. Removes all copyleft restrictions and includes dedicated NPU/GPU architecture consultations.
+:::
+
+::::
+
+:::{style="margin-top: 4rem;"}
+<a href="about.qmd" class="btn-primary">Inquire About Enterprise Licensing</a>
+:::

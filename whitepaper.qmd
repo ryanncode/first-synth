@@ -1,0 +1,31 @@
+---
+title: "First Synthesis Whitepaper"
+---
+
+:::{.hero-section style="padding-top: 3rem; padding-bottom: 2rem;"}
+:::{.lead}
+**Abstract:** The Monist Engine represents a paradigm shift in deterministic execution. By abandoning Directed Acyclic Graphs (DAGs) and hierarchical type-checking, we utilize geometric shortest-path routing to natively compile Quine's New Foundations (NF) unstratified logic into lock-free Interaction Nets.
+:::
+:::
+
+## 1. Introduction
+
+Traditional probabilistic agents and infinitely recursive machine learning architectures suffer from an inherent lack of formal bounds. First Synthesis addresses this by providing an absolute structural certainty layer—acting as the mathematical bedrock necessary for auditing and governing complex AI systems.
+
+## 2. Geometric Shortest-Path Routing
+
+Instead of stratifying logic, the Monist Oracle Layer evaluates topological bounds:
+- **Kosaraju's SCC:** Flattens 0-weight semantic cycles.
+- **Bellman-Ford Routing:** Measures absolute thermodynamic weights between graph nodes, detecting negative-weight paradoxes before runtime.
+
+## 3. Autonomous WGSL Physics Backend
+
+Our WGPU-driven interaction net physics layer natively executes validated structures:
+- **32-Bit Tagged Pointers:** Bypasses legacy 64-bit atomic limitations by packing ports into 32 bits.
+- **Lock-Free CAS:** Parallel `atomicCompareExchangeWeak` loops secure thread safety during highly volatile S, K, I rewrites.
+
+*(Full mathematical proofs and categorical semantics involving Stratified Pseudo Elephant (SPE) categories are detailed in the extended PDF version.)*
+
+:::{style="margin-top: 3rem;"}
+<a href="#" class="btn-secondary">Download Full Whitepaper (PDF)</a>
+:::

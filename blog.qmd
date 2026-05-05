@@ -1,0 +1,34 @@
+---
+title: "First Synth Engineering Blog"
+---
+
+:::{.hero-section style="padding-top: 3rem; padding-bottom: 2rem;"}
+:::{.lead}
+Insights, mathematical proofs, and architectural updates from the First Synthesis team regarding the development of the Monist Engine.
+:::
+:::
+
+::::{.feature-grid style="grid-template-columns: 1fr;"}
+
+:::{.feature-card}
+### [Mapping the Specker Tree of Infinite Rank](#)
+**Date:** [Placeholder Date] | **Author:** First Synth Engineering
+
+*An empirical analysis of parity collisions. How the Monist Engine successfully forced weak stratification boundary crossings to computationally yield an internal proof against non-linear cardinal mappings.*
+:::
+
+:::{.feature-card}
+### [Hardware-Aware Graphs: NPU Tile Mapping Algorithms](#)
+**Date:** [Placeholder Date] | **Author:** First Synth Engineering
+
+*Transitioning from generic WGPU contexts to specialized Neural Processing Units. We discuss our approach to mapping interaction geometry locally within constrained tile memory structures using sparse interaction rewrites.*
+:::
+
+:::{.feature-card}
+### [Neuro-Symbolic Verify Loops (LeanBridge)](#)
+**Date:** [Placeholder Date] | **Author:** First Synth Engineering
+
+*Moving beyond probabilistic generation. We introduce Semantic Self-Verification (SSV), a dynamic retrieve-generate-verify feedback loop designed to ground Large Language Models against strict geometric bounds using Lean 4.*
+:::
+
+::::

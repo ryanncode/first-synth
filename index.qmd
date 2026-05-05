@@ -1,0 +1,81 @@
+---
+title: ""
+---
+
+:::{.hero-section}
+# First Synthesis
+
+:::{.lead}
+We are First Synthesis LLC. Our primary demonstration, the **Monist Engine**, abandons traditional hierarchical type-checking. By utilizing geometric shortest-path routing, Monist compiles structurally dense paradoxes into native, lock-free Interaction Nets. Built for formal verification and absolute structural certainty.
+:::
+
+:::{.action-buttons}
+<a href="#" class="btn-primary">View GitHub</a>
+<a href="#" class="btn-secondary">Read Whitepaper</a>
+:::
+:::
+
+## Autonomous GPU Dispatch
+
+*Monist executes highly parallel combinatorial reductions directly in VRAM, completely bypassing CPU synchronization overhead.*
+
+```{=html}
+<div class="terminal-window">
+  <div class="terminal-header">
+    <div class="dots">
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+    </div>
+    <span>bash — monist-core/kosaraju-scc</span>
+  </div>
+  <div class="terminal-body">
+    <div class="terminal-placeholder">
+      [ Placeholder: Terminal Visual Logic Operation GIF 1 ]<br><br>
+      > Flattening 0-weight semantic cycles...<br>
+      > Measuring thermodynamic weights...
+    </div>
+  </div>
+</div>
+```
+
+```{=html}
+<div class="terminal-window">
+  <div class="terminal-header">
+    <div class="dots">
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+    </div>
+    <span>bash — monist-comb/reduce.wgsl</span>
+  </div>
+  <div class="terminal-body">
+    <div class="terminal-placeholder">
+      [ Placeholder: Terminal Visual Logic Operation GIF 2 ]<br><br>
+      > Allocating 32-bit Pointers in GPU Arena...<br>
+      > Lock-Free CAS Parallel Graph Rewire Active...
+    </div>
+  </div>
+</div>
+```
+
+## Architecture Features
+
+::::{.feature-grid}
+
+:::{.feature-card}
+### The Oracle Layer
+Transforms standard first-order logic into algebraic constraint matrices. Monist synthesizes dynamic T-Functors to absorb structural friction during dense recursion.
+:::
+
+:::{.feature-card}
+### WGPU Physics Backend
+32-Bit Tagged Pointers in a native Arena. Continuous evaluation until logical fixpoint via WGSL compute shaders, bypassing 64-bit atomic limits.
+:::
+
+:::{.feature-card}
+### Formal Verification
+Continuously compiles structural topologies into SMT-LIB v2 witnesses directly into Lean 4 for parallel proof-theoretic validation.
+:::
+
+::::

@@ -1,0 +1,39 @@
+---
+title: "First Synthesis LLC"
+---
+
+:::{.hero-section style="padding-top: 3rem; padding-bottom: 2rem;"}
+:::{.lead}
+First Synthesis LLC develops precise mathematical instruments. Our primary technology, the Monist Engine, pushes the boundaries of unstratified logic, combinatorial reduction, and formal verification against modern hardware limits.
+:::
+:::
+
+::::{.feature-grid style="margin-top: 1rem;"}
+
+:::{.feature-card style="grid-column: 1 / -1;"}
+### Background & Expertise
+We specialize in Rust, WGSL compute shaders, and the formal boundaries of self-referential logic. First Synth was engineered to solve the scaling crisis in deterministic execution, providing a rigid baseline for auditing probabilistic agents and infinitely recursive architectures.
+:::
+
+::::
+
+<h2 style="margin-top: 4rem; margin-bottom: 2rem;">Secure Communications</h2>
+
+::::{.feature-grid style="margin-top: 0;"}
+
+:::{.feature-card}
+### Enterprise & Commercial
+For licensing inquiries, dedicated support, or custom NPU integration research regarding the Monist Engine.
+
+<a href="#" class="btn-secondary" style="font-size: 0.85rem; display: inline-block; margin-top: 1rem;">Email Licensing</a>
+:::
+  
+:::{.feature-card}
+### Direct Channels
+
+- **GitHub:** [@FirstSynthesis](#)
+- **X (Twitter):** [@FirstSynth](#)
+- **LinkedIn:** [First Synthesis LLC](#)
+:::
+
+::::

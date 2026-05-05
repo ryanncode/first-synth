@@ -1,0 +1,51 @@
+---
+title: "Technical Documentation"
+---
+
+:::{.hero-section style="padding-top: 3rem; padding-bottom: 2rem;"}
+:::{.lead}
+Explore the architectural components, APIs, and CLI workflows of the Monist Engine. This documentation is intended for systems engineers and formal verification researchers integrating First Synth technologies.
+:::
+:::
+
+::::{.feature-grid}
+
+:::{.feature-card}
+### 1. The Oracle Layer (`monist-core`)
+- **AST Parsing:** Transforming first-order logic.
+- **Kosaraju's SCC:** Flatting semantic cycles.
+- **T-Functor Synthesis:** Absorbing structural friction.
+:::
+
+:::{.feature-card}
+### 2. GPU Physics Backend (`monist-comb`)
+- **WGSL Compute Shaders:** Native execution on Vulkan/Metal/DX12.
+- **Lock-Free Graph Rewiring:** Managing the FreeList and parallel S,K,I reduction loops.
+- **Garbage Collection:** Isolated topological sweep passes.
+:::
+
+:::{.feature-card}
+### 3. Formal Verification (`monist-verify`)
+- **Lean 4 Integration:** Continuous SMT-LIB v2 exports.
+- **RustMC Boundaries:** Tracking concurrent graph reductions.
+:::
+
+::::
+
+## Getting Started with the CLI
+
+To run the Monist Engine locally, utilize the included `monist-cli`:
+
+```bash
+# Clone the repository
+git clone https://github.com/FirstSynthesis/monist.git
+cd monist
+
+# Run the CPU benching suite
+cargo bench -p monist-bench-cpu
+
+# Execute a mathematical diagnostic (e.g., Burali-Forti)
+cargo run --bin burali_forti
+```
+
+*For more detailed configuration options, see the [CLI Reference Guide](#).*
