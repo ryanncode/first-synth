@@ -10,7 +10,7 @@ The Monist Engine is a deterministic execution layer designed exclusively to com
 
 * **Autonomous GPU Dispatch**: Executes highly parallel combinatorial reductions directly in VRAM, bypassing CPU synchronization overhead using a 32-bit tagged pointer system.
 * **The Oracle Layer**: Transforms standard first-order logic into algebraic constraint matrices and synthesizes dynamic T-Functors to absorb structural friction.
-* **Formal Verification**: Continuously compiles structural topologies into SMT-LIB v2 witnesses directly into Lean for parallel proof-theoretic validation.
+* **Formal Verification**: Continuously compiles structural topologies into SMT-LIB witnesses directly into Lean for parallel proof-theoretic validation.
 
 ## Licensing
 

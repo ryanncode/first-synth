@@ -61,21 +61,171 @@ First Synthesis LLC engineers computational foundations for formal verification 
 
 ## Architecture Features
 
+:::{#feature-grid-view}
 ::::{.feature-grid}
 
-:::{.feature-card}
+:::{.feature-card .interactive-card data-target="detail-itp"}
+### Hybrid ITP Interface
+Fuses human-guided natural deduction with an automated, bare-metal graph reduction engine. Users can actively steer high-level proofs while the system seamlessly handles raw topological complexity.
+:::
+
+:::{.feature-card .interactive-card data-target="detail-oracle"}
 ### The Oracle Layer
 Transforms standard first-order logic into algebraic constraint matrices. Monist synthesizes dynamic T-Functors to absorb structural friction during dense recursion.
 :::
 
-:::{.feature-card}
+:::{.feature-card .interactive-card data-target="detail-wgpu"}
 ### WGPU Physics Backend
 32-Bit Tagged Pointers in a native Arena. Continuous evaluation until logical fixpoint via WGSL compute shaders, bypassing 64-bit atomic limits.
 :::
 
-:::{.feature-card}
+:::{.feature-card .interactive-card data-target="detail-formal"}
 ### Formal Verification
-Continuously compiles structural topologies into SMT-LIB v2 witnesses directly into Lean for parallel proof-theoretic validation.
+Continuously compiles structural topologies into SMT-LIB witnesses directly into Lean for parallel proof-theoretic validation.
 :::
 
 ::::
+:::
+
+:::{#feature-detail-view style="display: none; padding: 2rem; background: #fafafa; border: 1px solid #eaeaea; border-radius: 8px; margin-top: 2rem;"}
+<button id="return-to-grid" class="btn-secondary" style="margin-bottom: 2rem; cursor: pointer; border: none;">&laquo; Return to Features</button>
+
+<div id="detail-content-container"></div>
+:::
+
+:::{#detail-itp style="display: none;"}
+### Hybrid ITP Interface: Deep Dive
+
+The Hybrid Interactive Theorem Prover (ITP) interface merges the intuitive, goal-directed exploration of traditional proof assistants with the raw, mechanical speed of our graph reduction engine. 
+
+- **Human-in-the-Loop:** Direct the high-level strategy while the engine automates the tedious combinatorics.
+- **Topological Navigation:** Visualize proofs not as text, but as spatial graph structures.
+- **Instant Feedback:** As you build propositions, the backend immediately begins reducing sub-graphs to normal form in the background.
+
+```{=html}
+<div class="terminal-window" style="margin-top: 2rem;">
+  <div class="terminal-header">
+    <div class="dots"><div class="dot"></div><div class="dot"></div><div class="dot"></div></div>
+    <span>ITP Interface Preview</span>
+  </div>
+  <div class="terminal-body"><div class="terminal-placeholder">
+    [ Placeholder: ITP Interface Video/GIF ]
+  </div></div>
+</div>
+```
+:::
+
+:::{#detail-oracle style="display: none;"}
+### The Oracle Layer: Deep Dive
+
+Standard first-order logic struggles with paradox and structural friction. The Oracle Layer acts as a mathematical shock-absorber.
+
+- **Algebraic Constraint Matrices:** We compile propositions into spatial matrices rather than linear ASTs.
+- **Dynamic T-Functors:** When infinite recursion or "liar paradoxes" are detected, the Oracle automatically synthesizes T-Functors to quarantine the cycle without halting the entire system.
+- **Holographic Phase Space:** Embeds the discrete graph into a continuous vector space for heuristic guidance.
+
+```{=html}
+<div class="terminal-window" style="margin-top: 2rem;">
+  <div class="terminal-header">
+    <div class="dots"><div class="dot"></div><div class="dot"></div><div class="dot"></div></div>
+    <span>Oracle Layer Visualization</span>
+  </div>
+  <div class="terminal-body"><div class="terminal-placeholder">
+    [ Placeholder: Oracle Layer Visualization GIF ]
+  </div></div>
+</div>
+```
+:::
+
+:::{#detail-wgpu style="display: none;"}
+### WGPU Physics Backend: Deep Dive
+
+This is where the Monist Engine abandons traditional CPU architectures. We treat computation as a physical process occurring in VRAM.
+
+- **Native Arena:** 32-Bit Tagged Pointers eliminate the overhead of 64-bit memory addressing, allowing models to fit entirely within high-speed GPU cache.
+- **Lock-Free CAS:** Compare-And-Swap algorithms enable thousands of parallel threads to rewrite the graph simultaneously without blocking.
+- **WGSL Compute Shaders:** WebGPU shaders ensure cross-platform bare-metal performance, from standard laptops to enterprise AI clusters.
+
+```{=html}
+<div class="terminal-window" style="margin-top: 2rem;">
+  <div class="terminal-header">
+    <div class="dots"><div class="dot"></div><div class="dot"></div><div class="dot"></div></div>
+    <span>WGPU Arena Profiler</span>
+  </div>
+  <div class="terminal-body"><div class="terminal-placeholder">
+    [ Placeholder: WGPU Arena Profiler GIF ]
+  </div></div>
+</div>
+```
+:::
+
+:::{#detail-formal style="display: none;"}
+### Formal Verification: Deep Dive
+
+Absolute structural certainty requires mathematical rigor. While the engine runs extremely fast, it also continuously proves its own work.
+
+- **SMT-LIB Witnesses:** As the graph reduces, it emits standard SMT-LIB witnesses.
+- **Lean Integration:** These witnesses are piped directly into the Lean 4 Theorem Prover.
+- **Parallel Validation:** Lean runs on a separate CPU thread pool, proving the topological reductions are sound without slowing down the GPU physics engine.
+
+```{=html}
+<div class="terminal-window" style="margin-top: 2rem;">
+  <div class="terminal-header">
+    <div class="dots"><div class="dot"></div><div class="dot"></div><div class="dot"></div></div>
+    <span>Lean Verification Output</span>
+  </div>
+  <div class="terminal-body"><div class="terminal-placeholder">
+    [ Placeholder: Lean Verification Output GIF ]
+  </div></div>
+</div>
+```
+:::
+
+```{=html}
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const gridView = document.getElementById('feature-grid-view');
+    const detailView = document.getElementById('feature-detail-view');
+    const detailContentContainer = document.getElementById('detail-content-container');
+    const returnBtn = document.getElementById('return-to-grid');
+    const cards = document.querySelectorAll('.interactive-card');
+
+    cards.forEach(card => {
+        // Add hover styles
+        card.style.cursor = 'pointer';
+        card.style.transition = 'transform 0.2s ease, border-color 0.2s ease';
+        card.addEventListener('mouseenter', () => {
+            card.style.transform = 'translateY(-5px)';
+            card.style.borderColor = 'var(--primary-color)';
+        });
+        card.addEventListener('mouseleave', () => {
+            card.style.transform = 'translateY(0)';
+            card.style.borderColor = 'rgba(255, 255, 255, 0.1)';
+        });
+
+        // Click handler
+        card.addEventListener('click', () => {
+            const targetId = card.getAttribute('data-target');
+            const targetElement = document.getElementById(targetId);
+            
+            // Clone the content so we don't destroy the original
+            detailContentContainer.innerHTML = targetElement.innerHTML;
+            
+            // Swap views
+            gridView.style.display = 'none';
+            detailView.style.display = 'block';
+            
+            // Optional: smooth scroll
+            detailView.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        });
+    });
+
+    returnBtn.addEventListener('click', () => {
+        detailView.style.display = 'none';
+        gridView.style.display = 'block';
+        // Scroll back to the grid view
+        gridView.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+});
+</script>
+```
