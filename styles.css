@@ -65,6 +65,7 @@ a:hover {
   font-weight: 700 !important;
   letter-spacing: -0.02em;
   font-size: 1.25rem;
+  white-space: nowrap;
 }
 
 .nav-link {
@@ -72,7 +73,14 @@ a:hover {
   font-size: 0.95rem;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  margin-left: 1.5rem;
+  margin-left: 1rem;
+  display: flex !important;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.navbar-nav {
+  align-items: center;
 }
 
 /* Hero Section */

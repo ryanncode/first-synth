@@ -28,7 +28,7 @@ Insights, mathematical proofs, and architectural updates from the First Synthesi
 ### [Neuro-Symbolic Verify Loops (LeanBridge)](#)
 **Date:** [Placeholder Date] | **Author:** First Synth Engineering
 
-*Moving beyond probabilistic generation. We introduce Semantic Self-Verification (SSV), a dynamic retrieve-generate-verify feedback loop designed to ground Large Language Models against strict geometric bounds using Lean 4.*
+*Moving beyond probabilistic generation. We introduce Semantic Self-Verification (SSV), a dynamic retrieve-generate-verify feedback loop designed to ground Large Language Models against strict geometric bounds using Lean.*
 :::
 
 ::::

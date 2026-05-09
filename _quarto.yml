@@ -16,13 +16,13 @@ website:
         href: about.qmd
     right:
       - icon: github
-        href: "https://github.com"
+        href: "https://github.com/ryanncode/monist/"
       - text: "Whitepaper"
         href: whitepaper.qmd
       - text: "Documentation"
-        href: docs.qmd
-      - text: "Blog"
-        href: blog.qmd
+        href: "https://ryanncode.github.io/monist/"
+#      - text: "Blog"
+#        href: blog.qmd
 
 format:
   html:

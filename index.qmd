@@ -6,12 +6,12 @@ title: ""
 # First Synthesis
 
 :::{.lead}
-We are First Synthesis LLC. Our primary demonstration, the **Monist Engine**, abandons traditional hierarchical type-checking. By utilizing geometric shortest-path routing, Monist compiles structurally dense paradoxes into native, lock-free Interaction Nets. Built for formal verification and absolute structural certainty.
+First Synthesis LLC engineers computational foundations for formal verification and neuro-symbolic AI. The flagship product, the **Monist Engine**, abandons traditional hierarchical type-checking. By utilizing geometric shortest-path routing, the engine natively compiles structurally dense paradoxes into lock-free GPU Interaction Nets. Built for absolute structural certainty.
 :::
 
 :::{.action-buttons}
-<a href="#" class="btn-primary">View GitHub</a>
-<a href="#" class="btn-secondary">Read Whitepaper</a>
+<a href="https://github.com/ryanncode/monist" class="btn-primary">View GitHub</a>
+<a href="whitepaper.qmd" class="btn-secondary">Read Whitepaper</a>
 :::
 :::
 
@@ -75,7 +75,7 @@ Transforms standard first-order logic into algebraic constraint matrices. Monist
 
 :::{.feature-card}
 ### Formal Verification
-Continuously compiles structural topologies into SMT-LIB v2 witnesses directly into Lean 4 for parallel proof-theoretic validation.
+Continuously compiles structural topologies into SMT-LIB v2 witnesses directly into Lean for parallel proof-theoretic validation.
 :::
 
 ::::

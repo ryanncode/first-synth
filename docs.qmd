@@ -26,7 +26,7 @@ Explore the architectural components, APIs, and CLI workflows of the Monist Engi
 
 :::{.feature-card}
 ### 3. Formal Verification (`monist-verify`)
-- **Lean 4 Integration:** Continuous SMT-LIB v2 exports.
+- **Lean Integration:** Continuous SMT-LIB v2 exports.
 - **RustMC Boundaries:** Tracking concurrent graph reductions.
 :::
 
