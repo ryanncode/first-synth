@@ -1,4 +1,4 @@
-# First Synthesis: Dual Architecture Overview
+# <div align="center">First Synthesis</div>
 
 First Synthesis engineers absolute mathematical boundaries for experimental logic and deterministic execution. This repository acts as the central hub and technical portal for our two flagship sibling projects: **The Monist Engine** and the **NF-Sketches Formal Lab**.
 
@@ -16,18 +16,23 @@ By abandoning traditional hierarchical type-checking in favor of geometric short
 We map logical intent into physical memory across an unbroken pipeline from the semantic boundary down to VRAM.
 
 ### 1. The Human Interface
+
 Users write high-level constraints via natural deduction in the `FormulaArena`. Instead of conditional logic, intent is mapped instantly into discrete spatial relationships.
 
 ### 2. The Geometry Layer (CPU)
+
 The CPU flattens syntax into a topological matrix. Kosaraju’s algorithm contracts semantic equivalencies, and Bellman-Ford intercepts cyclic paradoxes dynamically.
 
 ### 3. Graph Reduction
+
 We completely destroy the variable. The compiler leverages De Bruijn indexing to transform syntax into nameless, untyped S, K, I combinators.
 
 ### 4. Formal Validation (NF-Sketches)
+
 The geometric bounds established by the CPU are extracted as SMT-LIB constraints. These are piped into the Lean 4 formal lab (`parse-strat`) where an independent Bellman-Ford theorem mathematically guarantees the exact execution topology obeys Quine's relative type-shifting bounds without scope leakage.
 
 ### 5. The Physics Engine (Monist GPU)
+
 Valid graphs bypass garbage collection entirely and hit the bare metal. Lock-free WGSL compute shaders collide atomic nodes in massive parallel swarms inside GPU VRAM.
 
 ---
@@ -35,7 +40,8 @@ Valid graphs bypass garbage collection entirely and hit the bare metal. Lock-fre
 ## Licensing & Contact
 
 First Synthesis LLC employs a dual-licensing structure:
+
 1. **Open Source**: Committed to open mathematical research. Core components available for academic researchers and open-source developers.
 2. **Commercial License**: Enterprise proprietary licensing available for organizations integrating First Synth technology into closed-source AI architectures or commercial verifiers.
 
-*For enterprise licensing inquiries or dedicated NPU/GPU architecture consultations, please contact First Synthesis.*
+_For enterprise licensing inquiries or dedicated NPU/GPU architecture consultations, please contact First Synthesis._
