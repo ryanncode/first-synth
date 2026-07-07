@@ -45,3 +45,9 @@ First Synthesis LLC employs a dual-licensing structure:
 2. **Commercial License**: Enterprise proprietary licensing available for organizations integrating First Synth technology into closed-source AI architectures or commercial verifiers.
 
 _For enterprise licensing inquiries or dedicated NPU/GPU architecture consultations, please contact First Synthesis._
+
+---
+
+## License
+
+This website and its associated documentation are licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License (CC BY-NC-SA 4.0) - see the [LICENSE](LICENSE) file for details.
