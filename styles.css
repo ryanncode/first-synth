@@ -66,6 +66,9 @@ a:hover {
   letter-spacing: -0.02em;
   font-size: 1.25rem;
   white-space: nowrap;
+  overflow: visible !important;
+  text-overflow: clip !important;
+  flex-shrink: 0 !important;
 }
 
 .nav-link {
@@ -81,6 +84,18 @@ a:hover {
 
 .navbar-nav {
   align-items: center;
+}
+
+@media (max-width: 1200px) {
+  .navbar-brand {
+    font-size: 1.1rem !important;
+    margin-right: 1rem;
+  }
+  .nav-link {
+    margin-left: 0.5rem !important;
+    font-size: 0.85rem !important;
+    letter-spacing: 0.02em !important;
+  }
 }
 
 /* Hero Section */
@@ -115,6 +130,7 @@ a:hover {
   letter-spacing: 0.05em;
   transition: transform 0.2s ease;
   border-bottom: none;
+  white-space: nowrap;
 }
 
 .btn-primary:hover {
@@ -134,6 +150,7 @@ a:hover {
   letter-spacing: 0.05em;
   transition: all 0.2s ease;
   border-bottom: 1px solid var(--mono-black);
+  white-space: nowrap;
 }
 
 .btn-secondary:hover {

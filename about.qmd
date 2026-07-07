@@ -25,15 +25,16 @@ We specialize in Rust, WGSL compute shaders, and Lean 4 formal theorem proving. 
 ### Enterprise & Commercial
 For licensing inquiries, dedicated support, or custom NPU integration research regarding the Monist Engine.
 
-<a href="#" class="btn-secondary" style="font-size: 0.85rem; display: inline-block; margin-top: 1rem;">Email Licensing</a>
+<a href="mailto:firstsynthesis@gmail.com" class="btn-secondary" style="font-size: 0.85rem; display: inline-block; margin-top: 1rem;">Email Licensing</a>
 :::
   
 :::{.feature-card}
 ### Direct Channels
 
-- **GitHub:** [@FirstSynthesis](https://github.com/ryanncode/first-synth)
-- **X (Twitter):** [@FirstSynth](#)
-- **LinkedIn:** [First Synthesis LLC](#)
+- **Email:** [firstsynthesis@gmail.com](mailto:firstsynthesis@gmail.com)
+- **GitHub:** [@ryanncode](https://github.com/ryanncode)
+- **Theory Blog:** [thing.rodeo](https://thing.rodeo)
+- **Bluesky:** [@thingltd.bsky.social](https://bsky.app/profile/thingltd.bsky.social)
 :::
 
 ::::
