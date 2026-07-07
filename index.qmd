@@ -3,229 +3,47 @@ title: ""
 ---
 
 :::{.hero-section}
-# First Synthesis
+# Acyclic by Design
 
-:::{.lead}
-First Synthesis LLC engineers computational foundations for formal verification and neuro-symbolic AI. The flagship product, the **Monist Engine**, abandons traditional hierarchical type-checking. By utilizing geometric shortest-path routing, the engine natively compiles structurally dense paradoxes into lock-free GPU Interaction Nets. Built for absolute structural certainty.
+:::{.lead style="font-size: 1.4rem; font-weight: 300; max-width: 800px; margin-bottom: 2rem;"}
+First Synthesis LLC engineers absolute mathematical boundaries for experimental logic and deterministic execution. Our initial technology release features a powerful dual architecture: the **Monist Engine**, a high-performance GPU paradox evaluator, and its formal companion lab, **NF-Sketches**, a deep embedding in Lean 4 verifying its theoretical bounds.
 :::
 
-:::{.action-buttons}
-<a href="https://github.com/ryanncode/monist" class="btn-primary">View GitHub</a>
-<a href="whitepaper.qmd" class="btn-secondary">Read Whitepaper</a>
+:::{.action-buttons style="margin-bottom: 4rem;"}
+<a href="monist.qmd" class="btn-primary">Explore the Hardware</a>
+<a href="nf-sketches.qmd" class="btn-secondary">Explore the Mathematics</a>
 :::
 :::
 
-## Autonomous GPU Dispatch
+## The 5-Layer Execution Pipeline
 
-*Monist executes highly parallel combinatorial reductions directly in VRAM, completely bypassing CPU synchronization overhead.*
+We map logical intent into physical memory across an unbroken pipeline from the semantic boundary down to VRAM.
 
-```{=html}
-<div class="terminal-window">
-  <div class="terminal-header">
-    <div class="dots">
-      <div class="dot"></div>
-      <div class="dot"></div>
-      <div class="dot"></div>
-    </div>
-    <span>bash — monist-core/kosaraju-scc</span>
-  </div>
-  <div class="terminal-body">
-    <div class="terminal-placeholder">
-      [ Placeholder: Terminal Visual Logic Operation GIF 1 ]<br><br>
-      > Flattening 0-weight semantic cycles...<br>
-      > Measuring thermodynamic weights...
-    </div>
-  </div>
-</div>
-```
+:::{.grid style="margin-top: 3rem; gap: 2rem;"}
 
-```{=html}
-<div class="terminal-window">
-  <div class="terminal-header">
-    <div class="dots">
-      <div class="dot"></div>
-      <div class="dot"></div>
-      <div class="dot"></div>
-    </div>
-    <span>bash — monist-comb/reduce.wgsl</span>
-  </div>
-  <div class="terminal-body">
-    <div class="terminal-placeholder">
-      [ Placeholder: Terminal Visual Logic Operation GIF 2 ]<br><br>
-      > Allocating 32-bit Pointers in GPU Arena...<br>
-      > Lock-Free CAS Parallel Graph Rewire Active...
-    </div>
-  </div>
-</div>
-```
-
-## Architecture Features
-
-:::{#feature-grid-view}
-::::{.feature-grid}
-
-:::{.feature-card .interactive-card data-target="detail-itp"}
-### Hybrid ITP Interface
-Fuses human-guided natural deduction with an automated, bare-metal graph reduction engine. Users can actively steer high-level proofs while the system seamlessly handles raw topological complexity.
+:::{.g-col-12 .g-col-md-6 style="padding: 1.5rem; background: #fdfdfd; border-radius: 8px; border: 1px solid #eaeaea;"}
+### 1. The Human Interface
+Users write high-level constraints via natural deduction in the `FormulaArena`. Instead of conditional logic, intent is mapped instantly into discrete spatial relationships.
 :::
 
-:::{.feature-card .interactive-card data-target="detail-oracle"}
-### The Oracle Layer
-Transforms standard first-order logic into algebraic constraint matrices. Monist synthesizes dynamic T-Functors to absorb structural friction during dense recursion.
+:::{.g-col-12 .g-col-md-6 style="padding: 1.5rem; background: #fdfdfd; border-radius: 8px; border: 1px solid #eaeaea;"}
+### 2. The Geometry Layer
+The CPU converts text-based logic into a spatial map. It mathematically simplifies redundant equations and actively scans the structure to catch paradoxical loops before they can execute.
 :::
 
-:::{.feature-card .interactive-card data-target="detail-wgpu"}
-### WGPU Physics Backend
-32-Bit Tagged Pointers in a native Arena. Continuous evaluation until logical fixpoint via WGSL compute shaders, bypassing 64-bit atomic limits.
+:::{.g-col-12 .g-col-md-4 style="padding: 1.5rem; background: #fdfdfd; border-radius: 8px; border: 1px solid #eaeaea;"}
+### 3. Graph Reduction
+We completely destroy the variable. The compiler leverages De Bruijn indexing to transform syntax into nameless, untyped S, K, I combinators.
 :::
 
-:::{.feature-card .interactive-card data-target="detail-formal"}
-### Formal Verification
-Continuously compiles structural topologies into SMT-LIB witnesses directly into Lean for parallel proof-theoretic validation.
+:::{.g-col-12 .g-col-md-4 style="padding: 1.5rem; background: #fdfdfd; border-radius: 8px; border: 1px solid #eaeaea;"}
+### 4. The Physics Engine
+Lock-free WGSL compute shaders collide atomic nodes in massive parallel swarms inside GPU VRAM, unburdened by Garbage Collection.
 :::
 
-::::
+:::{.g-col-12 .g-col-md-4 style="padding: 1.5rem; background: #fdfdfd; border-radius: 8px; border: 1px solid #eaeaea;"}
+### 5. Holographic Co-processor
+We use Vector Symbolic Architectures (HDC) to superpose arrays into a continuous wave function, canceling logical noise in $O(1)$ time.
 :::
 
-:::{#feature-detail-view style="display: none; padding: 2rem; background: #fafafa; border: 1px solid #eaeaea; border-radius: 8px; margin-top: 2rem;"}
-<button id="return-to-grid" class="btn-secondary" style="margin-bottom: 2rem; cursor: pointer; border: none;">&laquo; Return to Features</button>
-
-<div id="detail-content-container"></div>
 :::
-
-:::{#detail-itp style="display: none;"}
-### Hybrid ITP Interface: Deep Dive
-
-The Hybrid Interactive Theorem Prover (ITP) interface merges the intuitive, goal-directed exploration of traditional proof assistants with the raw, mechanical speed of our graph reduction engine. 
-
-- **Human-in-the-Loop:** Direct the high-level strategy while the engine automates the tedious combinatorics.
-- **Topological Navigation:** Visualize proofs not as text, but as spatial graph structures.
-- **Instant Feedback:** As you build propositions, the backend immediately begins reducing sub-graphs to normal form in the background.
-
-```{=html}
-<div class="terminal-window" style="margin-top: 2rem;">
-  <div class="terminal-header">
-    <div class="dots"><div class="dot"></div><div class="dot"></div><div class="dot"></div></div>
-    <span>ITP Interface Preview</span>
-  </div>
-  <div class="terminal-body"><div class="terminal-placeholder">
-    [ Placeholder: ITP Interface Video/GIF ]
-  </div></div>
-</div>
-```
-:::
-
-:::{#detail-oracle style="display: none;"}
-### The Oracle Layer: Deep Dive
-
-Standard first-order logic struggles with paradox and structural friction. The Oracle Layer acts as a mathematical shock-absorber.
-
-- **Algebraic Constraint Matrices:** We compile propositions into spatial matrices rather than linear ASTs.
-- **Dynamic T-Functors:** When infinite recursion or "liar paradoxes" are detected, the Oracle automatically synthesizes T-Functors to quarantine the cycle without halting the entire system.
-- **Holographic Phase Space:** Embeds the discrete graph into a continuous vector space for heuristic guidance.
-
-```{=html}
-<div class="terminal-window" style="margin-top: 2rem;">
-  <div class="terminal-header">
-    <div class="dots"><div class="dot"></div><div class="dot"></div><div class="dot"></div></div>
-    <span>Oracle Layer Visualization</span>
-  </div>
-  <div class="terminal-body"><div class="terminal-placeholder">
-    [ Placeholder: Oracle Layer Visualization GIF ]
-  </div></div>
-</div>
-```
-:::
-
-:::{#detail-wgpu style="display: none;"}
-### WGPU Physics Backend: Deep Dive
-
-This is where the Monist Engine abandons traditional CPU architectures. We treat computation as a physical process occurring in VRAM.
-
-- **Native Arena:** 32-Bit Tagged Pointers eliminate the overhead of 64-bit memory addressing, allowing models to fit entirely within high-speed GPU cache.
-- **Lock-Free CAS:** Compare-And-Swap algorithms enable thousands of parallel threads to rewrite the graph simultaneously without blocking.
-- **WGSL Compute Shaders:** WebGPU shaders ensure cross-platform bare-metal performance, from standard laptops to enterprise AI clusters.
-
-```{=html}
-<div class="terminal-window" style="margin-top: 2rem;">
-  <div class="terminal-header">
-    <div class="dots"><div class="dot"></div><div class="dot"></div><div class="dot"></div></div>
-    <span>WGPU Arena Profiler</span>
-  </div>
-  <div class="terminal-body"><div class="terminal-placeholder">
-    [ Placeholder: WGPU Arena Profiler GIF ]
-  </div></div>
-</div>
-```
-:::
-
-:::{#detail-formal style="display: none;"}
-### Formal Verification: Deep Dive
-
-Absolute structural certainty requires mathematical rigor. While the engine runs extremely fast, it also continuously proves its own work.
-
-- **SMT-LIB Witnesses:** As the graph reduces, it emits standard SMT-LIB witnesses.
-- **Lean Integration:** These witnesses are piped directly into the Lean 4 Theorem Prover.
-- **Parallel Validation:** Lean runs on a separate CPU thread pool, proving the topological reductions are sound without slowing down the GPU physics engine.
-
-```{=html}
-<div class="terminal-window" style="margin-top: 2rem;">
-  <div class="terminal-header">
-    <div class="dots"><div class="dot"></div><div class="dot"></div><div class="dot"></div></div>
-    <span>Lean Verification Output</span>
-  </div>
-  <div class="terminal-body"><div class="terminal-placeholder">
-    [ Placeholder: Lean Verification Output GIF ]
-  </div></div>
-</div>
-```
-:::
-
-```{=html}
-<script>
-document.addEventListener('DOMContentLoaded', () => {
-    const gridView = document.getElementById('feature-grid-view');
-    const detailView = document.getElementById('feature-detail-view');
-    const detailContentContainer = document.getElementById('detail-content-container');
-    const returnBtn = document.getElementById('return-to-grid');
-    const cards = document.querySelectorAll('.interactive-card');
-
-    cards.forEach(card => {
-        // Add hover styles
-        card.style.cursor = 'pointer';
-        card.style.transition = 'transform 0.2s ease, border-color 0.2s ease';
-        card.addEventListener('mouseenter', () => {
-            card.style.transform = 'translateY(-5px)';
-            card.style.borderColor = 'var(--primary-color)';
-        });
-        card.addEventListener('mouseleave', () => {
-            card.style.transform = 'translateY(0)';
-            card.style.borderColor = 'rgba(255, 255, 255, 0.1)';
-        });
-
-        // Click handler
-        card.addEventListener('click', () => {
-            const targetId = card.getAttribute('data-target');
-            const targetElement = document.getElementById(targetId);
-            
-            // Clone the content so we don't destroy the original
-            detailContentContainer.innerHTML = targetElement.innerHTML;
-            
-            // Swap views
-            gridView.style.display = 'none';
-            detailView.style.display = 'block';
-            
-            // Optional: smooth scroll
-            detailView.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        });
-    });
-
-    returnBtn.addEventListener('click', () => {
-        detailView.style.display = 'none';
-        gridView.style.display = 'block';
-        // Scroll back to the grid view
-        gridView.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    });
-});
-</script>
-```

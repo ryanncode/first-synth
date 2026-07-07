@@ -9,20 +9,20 @@ website:
     logo: ""
     left:
       - text: "Monist Engine"
-        href: index.qmd
+        href: monist.qmd
+      - text: "NF-Sketches Lab"
+        href: nf-sketches.qmd
+      - text: "Docs"
+        href: docs.qmd
+    right:
+      - text: "Whitepaper"
+        href: whitepaper.qmd
       - text: "Licensing"
         href: usage.qmd
       - text: "About"
         href: about.qmd
-    right:
       - icon: github
-        href: "https://github.com/ryanncode/monist/"
-      - text: "Whitepaper"
-        href: whitepaper.qmd
-      - text: "Documentation"
-        href: "https://ryanncode.github.io/monist/"
-#      - text: "Blog"
-#        href: blog.qmd
+        href: "https://github.com/ryanncode/first-synth"
 
 format:
   html:

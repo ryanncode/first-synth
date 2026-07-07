@@ -4,15 +4,15 @@ title: "First Synthesis LLC"
 
 :::{.hero-section style="padding-top: 3rem; padding-bottom: 2rem;"}
 :::{.lead}
-First Synthesis LLC develops precise mathematical instruments. Our primary technology, the Monist Engine, pushes the boundaries of unstratified logic, combinatorial reduction, and formal verification against modern hardware limits.
+First Synthesis LLC develops precise mathematical instruments for the post-von-Neumann era. Our primary technologies, the **Monist Engine** and the **NF-Sketches** formal lab, push the boundaries of unstratified logic, combinatorial reduction, and formal verification against modern hardware limits.
 :::
 :::
 
 ::::{.feature-grid style="margin-top: 1rem;"}
 
 :::{.feature-card style="grid-column: 1 / -1;"}
-### Background & Expertise
-We specialize in Rust, WGSL compute shaders, and the formal boundaries of self-referential logic. First Synth was engineered to solve the scaling crisis in deterministic execution, providing a rigid baseline for auditing probabilistic agents and infinitely recursive architectures.
+### The Dual Architecture Mission
+We specialize in Rust, WGSL compute shaders, and Lean 4 formal theorem proving. The synergy between high-speed physical combinatorial execution (Monist) and rigorous mathematical truth validation (NF-Sketches) creates an unbreakable deterministic bedrock. First Synth was engineered to solve the scaling crisis in deterministic execution, providing a rigid baseline for auditing probabilistic AI agents and infinitely recursive topologies.
 :::
 
 ::::
@@ -31,7 +31,7 @@ For licensing inquiries, dedicated support, or custom NPU integration research r
 :::{.feature-card}
 ### Direct Channels
 
-- **GitHub:** [@FirstSynthesis](#)
+- **GitHub:** [@FirstSynthesis](https://github.com/ryanncode/first-synth)
 - **X (Twitter):** [@FirstSynth](#)
 - **LinkedIn:** [First Synthesis LLC](#)
 :::
