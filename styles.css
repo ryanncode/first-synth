@@ -114,10 +114,24 @@ a:hover {
 }
 
 .action-buttons {
+  margin-bottom: 4rem;
+}
+
+.action-buttons p {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
-  margin-bottom: 4rem;
+  margin: 0;
+}
+
+@media (max-width: 576px) {
+  .action-buttons p {
+    flex-direction: column;
+  }
+  .btn-primary, .btn-secondary {
+    text-align: center;
+    width: 100%;
+  }
 }
 
 .btn-primary {
