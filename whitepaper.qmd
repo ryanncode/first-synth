@@ -12,8 +12,6 @@ format:
 <a href="whitepaper.pdf" class="btn-primary" style="display: inline-block; padding: 1rem 2rem; font-weight: 600;" target="_blank">Download Full PDF Version</a>
 :::
 
-# Acyclic by Design: Interaction Nets for Non-Well-Founded Sets
-
 ## Preface
 
 The Monist Engine is a GPU-accelerated logic environment built to compute W.V.O. Quine's New Foundations (NF) set theory. The project originated as `nf-sketches`, a Lean 4 formalization using Bellman-Ford directed graphs to intercept cyclical paradoxes before call-stack exhaustion. The architecture was then rewritten into `monist`, a Rust-based compiler, to bypass the performance constraints of traditional hierarchical type-checkers. This implementation translates verified topologies directly into lock-free WebGPU compute shaders.
