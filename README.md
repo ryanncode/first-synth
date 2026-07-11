@@ -37,17 +37,13 @@ Valid graphs bypass garbage collection entirely and hit the bare metal. Lock-fre
 
 ---
 
-## Licensing & Contact
+## License & Contact
 
-First Synthesis LLC employs a dual-licensing structure:
+First Synthesis LLC employs a dual-licensing structure for the core engines:
 
 1. **Open Source**: Committed to open mathematical research. Core components available for academic researchers and open-source developers.
 2. **Commercial License**: Enterprise proprietary licensing available for organizations integrating First Synth technology into closed-source AI architectures or commercial verifiers.
 
-_For enterprise licensing inquiries or dedicated NPU/GPU architecture consultations, please contact [firstsynthesis@gmail.com](mailto:firstsynthesis@gmail.com)._
-
----
-
-## License
-
 This website and its associated documentation are licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License (CC BY-NC-SA 4.0) - see the [LICENSE](LICENSE) file for details.
+
+_For enterprise licensing inquiries or dedicated NPU/GPU architecture consultations, please contact [firstsynthesis@gmail.com](mailto:firstsynthesis@gmail.com)._
