@@ -1,17 +1,3 @@
----
-title: "Acyclic by Design: Interaction Nets for Non-Well-Founded Sets"
-format:
-  html:
-    toc: true
-    toc-depth: 3
-    toc-title: "Contents"
-    number-sections: false
----
-
-:::{style="margin-top: 2rem; margin-bottom: 3rem; text-align: center;"}
-<a href="whitepaper.pdf" class="btn-primary" style="display: inline-block; padding: 1rem 2rem; font-weight: 600;" target="_blank">Download Full PDF Version</a>
-:::
-
 # Acyclic by Design: Interaction Nets for Non-Well-Founded Sets
 
 ## Preface
@@ -540,13 +526,3 @@ Taelin, Victor. 2024. "HVM2: A Parallel Evaluator for Interaction Combinators." 
 Tarjan, Robert. 1972. "Depth-First Search and Linear Graph Algorithms." *SIAM Journal on Computing* 1, no. 2: 146–60.
 
 Wilshaw, C. 2025. "New Foundations Is Consistent." *Github*.
-
-<script>
-document.addEventListener("DOMContentLoaded", function() {
-  const refs = document.getElementById('references');
-  const appendix = document.getElementById('quarto-appendix');
-  if (refs && appendix) {
-    refs.parentNode.insertBefore(appendix, refs);
-  }
-});
-</script>
