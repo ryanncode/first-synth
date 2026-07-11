@@ -8,6 +8,29 @@ format:
     number-sections: false
 ---
 
+<style>
+/* Whitepaper-specific dense academic formatting */
+.quarto-container { max-width: 1400px !important; }
+#quarto-margin-sidebar { font-size: 0.85rem !important; }
+p, li, td, th { 
+  font-size: 0.96rem !important; 
+  line-height: 1.4 !important; 
+}
+.math, mjx-container {
+  font-size: 1.04em !important;
+}
+.math.display, mjx-container[display="true"] {
+  font-size: 1.07em !important;
+}
+pre {
+  font-size: 0.81em !important;
+}
+p > code, li > code {
+  font-size: 0.85em !important;
+  padding: 0.06em 0.22em !important;
+}
+</style>
+
 :::{style="margin-top: 2rem; margin-bottom: 3rem; text-align: center;"}
 <a href="whitepaper.pdf" class="btn-primary" style="display: inline-block; padding: 1rem 2rem; font-weight: 600;" target="_blank">Download Full PDF Version</a>
 :::
