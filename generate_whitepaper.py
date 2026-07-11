@@ -45,7 +45,8 @@ p > code, li > code {
 with open(input_file, 'r') as f:
     content = f.read()
 
-# The markdown document already starts with "# Acyclic by Design...", so we can just append it.
+# The markdown document starts with the H1 title, but Quarto uses the YAML title. We must remove the markdown H1 to avoid duplication.
+content = content.replace("# Acyclic by Design: Interaction Nets for Non-Well-Founded Sets\n", "")
 
 js_script = """
 <script>

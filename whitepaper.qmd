@@ -35,7 +35,6 @@ p > code, li > code {
 <a href="whitepaper.pdf" class="btn-primary" style="display: inline-block; padding: 1rem 2rem; font-weight: 600;" target="_blank">Download Full PDF Version</a>
 :::
 
-# Acyclic by Design: Interaction Nets for Non-Well-Founded Sets
 
 ## Preface
 
