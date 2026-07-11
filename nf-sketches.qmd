@@ -8,6 +8,10 @@ title: "NF-Sketches Formal Lab"
 :::
 :::
 
+:::{style="margin-top: 2rem; margin-bottom: 3rem; text-align: center;"}
+<a href="https://github.com/ryanncode/nf-sketches" class="btn-primary" style="display: inline-block; padding: 1rem 2rem; font-weight: 600;" target="_blank">View GitHub Repository</a>
+:::
+
 ## 1. The Dual-Verification Pipeline
 
 Structural certainty requires mathematical rigor. Monist features a fully synchronized Differential Equivalence Testing pipeline that links the high-speed Rust evaluator to a formal, machine-checked embedding in Lean 4.

@@ -8,6 +8,10 @@ title: "The Monist Engine"
 :::
 :::
 
+:::{style="margin-top: 2rem; margin-bottom: 3rem; text-align: center;"}
+<a href="https://github.com/ryanncode/monist" class="btn-primary" style="display: inline-block; padding: 1rem 2rem; font-weight: 600;" target="_blank">View GitHub Repository</a>
+:::
+
 ## 1. Syntax is Dead: The Geometry Layer
 
 Transitioning to geometric validation demands the eradication of abstract syntax trees (ASTs). Standard parsers rely on Context-Free Grammars (CFGs) and Pushdown Automata, which inherently fail to track W.V.O. Quine’s relative integer type-shifts across nested mathematical sets.
