@@ -2,14 +2,14 @@
 title: "NF-Sketches Formal Lab"
 ---
 
-:::{.hero-section style="padding-top: 3rem; padding-bottom: 2rem;"}
+:::{.hero-section}
 :::{.lead}
 **The Formal Truth Layer.** Absolute structural certainty requires mathematical rigor. NF-Sketches is our companion formal lab built entirely in the Lean 4 Theorem Prover, acting as the independent mathematical bedrock for the Monist Engine.
 :::
-:::
 
-:::{style="margin-top: 2rem; margin-bottom: 3rem; text-align: center;"}
-<a href="https://github.com/ryanncode/nf-sketches" class="btn-primary" style="display: inline-block; padding: 1rem 2rem; font-weight: 600;" target="_blank">View GitHub Repository</a>
+:::{.action-buttons}
+<a href="https://github.com/ryanncode/nf-sketches" class="btn-primary" target="_blank">View GitHub Repository</a>
+:::
 :::
 
 ## 1. The Dual-Verification Pipeline

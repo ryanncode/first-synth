@@ -2,14 +2,14 @@
 title: "The Monist Engine"
 ---
 
-:::{.hero-section style="padding-top: 3rem; padding-bottom: 2rem;"}
+:::{.hero-section}
 :::{.lead}
 **The Hardware Layer.** The Monist Engine is a bare-metal, GPU-accelerated logic environment. By abandoning traditional hierarchical type-checking and contextual grammars, it compiles structural typestates directly into lock-free WebGPU Interaction Nets.
 :::
-:::
 
-:::{style="margin-top: 2rem; margin-bottom: 3rem; text-align: center;"}
-<a href="https://github.com/ryanncode/monist" class="btn-primary" style="display: inline-block; padding: 1rem 2rem; font-weight: 600;" target="_blank">View GitHub Repository</a>
+:::{.action-buttons}
+<a href="https://github.com/ryanncode/monist" class="btn-primary" target="_blank">View GitHub Repository</a>
+:::
 :::
 
 ## 1. Syntax is Dead: The Geometry Layer
