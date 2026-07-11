@@ -17,6 +17,34 @@ We specialize in Rust, WGSL compute shaders, and Lean 4 formal theorem proving. 
 
 ::::
 
+<h2 style="margin-top: 4rem; margin-bottom: 2rem;">Theoretical & Applied Frontiers</h2>
+
+The core technology of the Monist Engine is designed to scale across four speculative and commercial environments:
+
+::::{.feature-grid}
+
+:::{.feature-card}
+### Transfinite Combinatorial Computing
+Native computation of transfinite cardinals without bottlenecking on the Axiom of Choice, utilizing Ramsey-theoretic boundaries to map stable fixed points in complex feedback networks.
+:::
+
+:::{.feature-card}
+### Hardware-Logic Co-Evolution
+The blueprint for synthesizing custom Interaction Net FPGAs where logical reduction occurs via physical signal collisions, eliminating standard fetch-execute cycles.
+:::
+
+:::{.feature-card}
+### Quantum-Topos Logic Synthesis
+Treating logic as a geometric object capable of modeling quantum vacuums as saturated computational boundaries, calculating physical energy shifts from algorithmic friction.
+:::
+
+:::{.feature-card}
+### Scalable AI Oversight
+A deterministic bedrock to audit, govern, and formally verify probabilistic black-box neural networks, catching hallucinations through structural self-verification.
+:::
+
+::::
+
 <h2 style="margin-top: 4rem; margin-bottom: 2rem;">Secure Communications</h2>
 
 ::::{.feature-grid style="margin-top: 0;"}

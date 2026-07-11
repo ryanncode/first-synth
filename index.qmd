@@ -15,35 +15,45 @@ First Synthesis LLC engineers absolute mathematical boundaries for experimental 
 :::
 :::
 
-## The 5-Layer Execution Pipeline
+## The Well-Foundedness Bottleneck
 
-We map logical intent into physical memory across an unbroken pipeline from the semantic boundary down to VRAM.
+Traditional verification frameworks and computational architectures rest on the strict assumption of well-foundedness, leveraging rigid hierarchical type systems to eliminate self-referential loops. When forced to process non-well-founded sets, cyclic graph topologies, or impredicative feedback networks, classical software tools like Coq, Lean, or Haskell-based proof editors encounter catastrophic stack exhaustion, infinite regression, or thread divergence.
+
+The Monist Engine fundamentally breaks this limitation. Its foundational breakthrough lies in its architectural design as a bare-metal, GPU-accelerated logic engine that safely evaluates self-referential paradoxes and cyclic graphs natively without runtime failure or memory exhaustion. By replacing traditional hierarchical type-checkers with a graph-geometric constraint engine, Monist transforms logical contradictions from fatal system crashes into measurable, productive physical boundaries.
+
+While the mainstream computing industry spends massive development budgets fighting cycles and forcing safety through immutable tree structures, Monist accepts unstratified, cyclic, and infinite structures as native computational inputs. The engine translates these networks into a flat spatial matrix where contradictions manifest as quantifiable geometric friction, neutralizing infinite loops before they can consume physical hardware resources.
+
+---
+
+## The 5-Layer Hybrid Synthetic Pipeline
+
+Computation does not remain confined to a single paradigm; it transitions dynamically across optimization domains:
 
 :::{.grid style="margin-top: 3rem; gap: 2rem;"}
 
 :::{.g-col-12 .g-col-md-6 style="padding: 1.5rem; background: #fdfdfd; border-radius: 8px; border: 1px solid #eaeaea;"}
-### 1. The Human Interface
-Users write high-level constraints via natural deduction in the `FormulaArena`. Instead of conditional logic, intent is mapped instantly into discrete spatial relationships.
+### 1. Natural Deduction (The Human Interface)
+Users declare high-level logical constraints and manage goals using interactive tactics within the `FormulaArena`. This layer captures mathematical intent and strips away logical scaffolding.
 :::
 
 :::{.g-col-12 .g-col-md-6 style="padding: 1.5rem; background: #fdfdfd; border-radius: 8px; border: 1px solid #eaeaea;"}
-### 2. The Geometry Layer
-The CPU converts text-based logic into a spatial map. It mathematically simplifies redundant equations and actively scans the structure to catch paradoxical loops before they can execute.
+### 2. The Geometry Layer (CPU Core)
+The engine flattens text syntax into a topological matrix. The CPU executes Kosaraju's algorithm to contract zero-weight equality rings and runs Bellman-Ford shortest-path evaluation to intercept negative-weight paradox loops.
 :::
 
 :::{.g-col-12 .g-col-md-4 style="padding: 1.5rem; background: #fdfdfd; border-radius: 8px; border: 1px solid #eaeaea;"}
-### 3. Graph Reduction
-We completely destroy the variable. The compiler leverages De Bruijn indexing to transform syntax into nameless, untyped S, K, I combinators.
+### 3. Graph Reduction (The Compiler)
+The compiler destroys alphanumeric variables completely, replacing them with nameless de Bruijn levels and converting the structure into pure, untyped combinators.
 :::
 
 :::{.g-col-12 .g-col-md-4 style="padding: 1.5rem; background: #fdfdfd; border-radius: 8px; border: 1px solid #eaeaea;"}
-### 4. The Physics Engine
-Lock-free WGSL compute shaders collide atomic nodes in massive parallel swarms inside GPU VRAM, unburdened by Garbage Collection.
+### 4. The Physics Engine (GPU VRAM)
+The hardware executor ships these combinator graphs to WGSL compute shaders. Lock-free atomic nodes physically collide and annihilate in parallel without central synchronization or garbage collection pauses.
 :::
 
 :::{.g-col-12 .g-col-md-4 style="padding: 1.5rem; background: #fdfdfd; border-radius: 8px; border: 1px solid #eaeaea;"}
-### 5. Holographic Co-processor
-We use Vector Symbolic Architectures (HDC) to superpose arrays into a continuous wave function, canceling logical noise in $O(1)$ time.
+### 5. The Holographic Co-processor
+For high-density relational data, the system maps discrete graphs into a 10,000-dimensional continuous wave function using Vector Symbolic Architectures (HDC). It exploits destructive interference to cancel noise in $O(1)$ time before snapping results back to discrete boundaries.
 :::
 
 :::

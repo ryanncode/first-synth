@@ -8,11 +8,11 @@ title: "NF-Sketches Formal Lab"
 :::
 :::
 
-## 1. Trust, but Differentially Verify
+## 1. The Dual-Verification Pipeline
 
-The Monist Engine runs at bare-metal speeds in Rust and WebGPU. But high-velocity combinatorial evaluation is useless without an absolute guarantee of topological soundness.
+Structural certainty requires mathematical rigor. Monist features a fully synchronized Differential Equivalence Testing pipeline that links the high-speed Rust evaluator to a formal, machine-checked embedding in Lean 4.
 
-To achieve this, we deploy **differential equivalence testing**. As a user evaluates a proof in Monist, the CPU geometry layer successfully bounding the cycle generates an `NfValidate.StratificationWitness` trace. This physical execution matrix is exported directly as a standard **SMT-LIB constraint block**.
+When a geometric compilation occurs, the core engine exports an SMT-LIB witness explicitly capturing the graph's evaluation limits. The Lean interpreter ingests this block via an independent Bellman-Ford implementation to trace the identical constraints, mathematically proving that bare-metal execution matches machine-checked soundness.
 
 ## 2. The SMT-LIB Bridge
 
