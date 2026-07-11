@@ -48,7 +48,7 @@ The engine coordinates a hybrid synthetic pipeline that maps logical intent into
 4. **The Physics Engine (GPU VRAM):** The hardware executor ships these combinator graphs to WGSL compute shaders, where lock-free atomic nodes physically collide and annihilate in parallel.
 5. **The Holographic Co-processor:** Operating as an experimental continuous-math accelerator alongside the discrete engine, this system superposes arrays into a high-dimensional wave function using Vector Symbolic Architectures (HDC). It exploits destructive interference to cancel noise in $O(1)$ time before snapping results back to discrete boundaries.
 
----
+{{< pagebreak >}}
 
 ## 1. The Human Interface
 
