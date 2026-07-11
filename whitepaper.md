@@ -4,21 +4,13 @@
 
 The Monist Engine is a GPU-accelerated logic environment built to compute W.V.O. Quine's New Foundations (NF) set theory. The project originated as `nf-sketches`, a Lean 4 formalization using Bellman-Ford directed graphs to intercept cyclical paradoxes before call-stack exhaustion. The architecture was then rewritten into `monist`, a Rust-based compiler, to bypass the performance constraints of traditional hierarchical type-checkers. This implementation translates verified topologies directly into lock-free WebGPU compute shaders.
 
-The engine coordinates a hybrid synthetic pipeline that maps logical intent into physical memory. To isolate theoretical validation from physical hardware constraints, the architecture partitions execution across two boundaries:
+The engine coordinates a hybrid synthetic pipeline that maps logical intent into physical memory. To isolate theoretical validation from physical hardware constraints, the architecture partitions execution across five sequential stages:
 
-**The Interactive Topology Layer**
-
-1. **Natural Deduction (The Human Interface):** Users write high-level constraints and deploy interactive tactics (`intro`, `apply`, `rewrite`) via the CLI, capturing mathematical intent prior to spatial abstraction.
-2. **The Geometry Layer (CPU & System Memory):** The interface flattens syntax into a topological matrix. The CPU traces paths through system RAM via Bellman-Ford shortest-path evaluation to halt negative-weight cycles natively and exports verified SMT-LIB constraints to Lean 4.
-
-**The Bare-Metal Execution Layer**
-
-3. **Graph Reduction (The Compiler):** Orchestrated via standalone low-level targets, the compiler discards variable substitution entirely, translating verified topologies into pure, untyped Interaction Nets driven by spatial combinators.
-4. **The Physics Engine (GPU VRAM):** The hardware executor ships these combinator graphs to WGSL compute shaders. Unburdened by locks or tracing garbage collectors, atomic nodes physically collide and annihilate each other in parallel.
-
-**The Experimental Data-Plane**
-
-5. **The Holographic Co-processor (Continuous Math):** Operating as an experimental standalone accelerator alongside the primary discrete engine, this system superposes arrays into a high-dimensional continuous wave function on the GPU using Vector Symbolic Architectures (HDC). This exploits destructive interference to cancel out noise in $O(1)$ time, isolating target anomalies before snapping the results back into discrete logical boundaries.
+1. **Natural Deduction (The Human Interface):** Users write high-level constraints and deploy interactive tactics (`intro`, `apply`, `rewrite`) via the CLI to capture mathematical intent.
+2. **The Geometry Layer (CPU):** The interface flattens syntax into a topological matrix. The CPU traces paths via Bellman-Ford shortest-path evaluation to halt negative-weight cycles and exports verified SMT-LIB constraints to Lean 4.
+3. **Graph Reduction (The Compiler):** Discarding variable substitution entirely, the compiler translates verified topologies into pure, untyped Interaction Nets driven by spatial combinators.
+4. **The Physics Engine (GPU VRAM):** The hardware executor ships these combinator graphs to WGSL compute shaders, where lock-free atomic nodes physically collide and annihilate in parallel.
+5. **The Holographic Co-processor:** Operating as an experimental continuous-math accelerator alongside the discrete engine, this system superposes arrays into a high-dimensional wave function using Vector Symbolic Architectures (HDC). It exploits destructive interference to cancel noise in $O(1)$ time before snapping results back to discrete boundaries.
 
 ---
 
@@ -63,10 +55,10 @@ To prevent structural contradictions and topological paradoxes, the system enfor
 The implementation of ordered sequences exposes the geometric constraints governing the human interface. Traditional mathematics defines the Kuratowski ordered pair as $(\{\{x\}, \{x, y\}\})$. This structure forces a $+2$ typestate shift between variables, introducing computational bottlenecks into downstream hardware execution. To bypass this limitation, the `monist-cli` parser's architecture establishes a bifurcated roadmap for sequence handling, splitting future syntactic n-tuple abstraction from current bare-metal binary pairing. For generalized multi-variable sequences, the theoretical roadmap outlines a planned implementation of Hailperin's homogeneous ordered n-tuple representation (Hailperin 1944, 8-9). Formalized recursively via exact unit-class abstractions where $\iota X$ denotes $\hat{u}(u=X)$ and $\iota^n X$ denotes $\iota(\iota^{n-1} X)$, the Hailperin n-tuple is structured as:
 
 $$
-\begin{aligned}
-\langle X_1, \dots, X_n \rangle &= \langle \iota^{2(n-2)} X_1, \langle X_2, \dots, X_n \rangle \rangle \\
-&\quad \text{ for } n > 2.
-\end{aligned}
+\begin{gathered}
+\langle X_1, \dots, X_n \rangle = \langle \iota^{2(n-2)} X_1, \langle X_2, \dots, X_n \rangle \rangle \\
+\text{ for } n > 2.
+\end{gathered}
 $$
 
 Applying the $\iota^{2(n-2)}$ operator guarantees structural homogeneity by assigning identical typestate integers to every variable $x_1, \dots, x_n$ during weak stratification evaluation.
@@ -74,10 +66,10 @@ Applying the $\iota^{2(n-2)}$ operator guarantees structural homogeneity by assi
 Currently, for binary relations undergoing bare-metal evaluation, the `monist-core` geometry solver maps syntax directly into Quine ordered pairs $Q(a,b)$. The Quine pair maintains a rigid zero-weight topological shift, preserving absolute geometric flatness across the Directed Acyclic Graph. The engine relies on discrete primitive constructors (`qpair` and `qproj`) to guarantee this structural stability. This ensures variables within deep relational pipelines bypass type elevation limits during hardware execution. This physical routing bypasses the severe constraints of the semantic Wiener-Kuratowski ordered pair:
 
 $$
-\begin{aligned}
-\langle x, y \rangle &= \{z \mid z = \{z \mid z = x\} \\
-&\quad \vee z = \{z \mid z = x \vee z = y\}\},
-\end{aligned}
+\begin{gathered}
+\langle x, y \rangle = \{z \mid z = \{z \mid z = x\} \\
+\vee z = \{z \mid z = x \vee z = y\}\},
+\end{gathered}
 $$
 
 ...which demands that $z$ reside exactly two type levels higher than $x$ and $y$ (Crabbé 1994, 486). While bare-metal relational evaluation utilizes Quine pairs to maintain flat topological routing, semantic witness verifiers processing these $+2$ typestate elevations deploy Rosser's Axiom of Counting ($\forall x \in Nat, x = T(x)$). The verifiers apply Rosser's identity $T^3(sort(x)) = sort(x)$ to evaluate membership relations ($x \in_{\mathcal{S}} y$) across elevated Wiener-Kuratowski tuples in $O(1)$ time without memory explosion (Crabbé 1994, 487). This dual architectural vision combines Hailperin coordinate homogeneity at the human interface with the established Quine typestate flatness in the physical execution arena.
@@ -137,9 +129,9 @@ To demonstrate the solver's algorithmic conversion mechanics, the following raw 
 
 | Logical Constraint | Source Node | Target Node | Integer Weight |
 | :--- | :--- | :--- | :---: |
-| $x - y <= 5$ | $y$ | $x$ | $5$ |
-| $y - z <= -2$ | $z$ | $y$ | $-2$ |
-| $w - x <= 0$ | $x$ | $w$ | $0$ |
+| $x - y \le 5$ | $y$ | $x$ | $5$ |
+| $y - z \le -2$ | $z$ | $y$ | $-2$ |
+| $w - x \le 0$ | $x$ | $w$ | $0$ |
 | $x = y$ | $x$ | $y$ | $0$ |
 | $x = y$ | $y$ | $x$ | $0$ |
 
