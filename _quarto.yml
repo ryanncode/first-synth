@@ -4,6 +4,7 @@ project:
     - "*.qmd"
   resources:
     - "whitepaper.pdf"
+    - "interactive-console/**"
 
 website:
   title: "First Synthesis"
@@ -12,9 +13,11 @@ website:
     foreground: "#000000"
     logo: ""
     left:
-      - text: "Monist Engine"
+      - text: "Monist"
         href: monist.qmd
-      - text: "NF-Sketches Lab"
+      - text: "Console"
+        href: interactive-console/index.html
+      - text: "NF-Sketches"
         href: nf-sketches.qmd
       - text: "Docs"
         href: docs.qmd
