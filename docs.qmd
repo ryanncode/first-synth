@@ -1,67 +1,102 @@
 ---
-title: "Technical Documentation"
+title: "Technical Documentation & API Reference"
+toc: true
+toc-depth: 3
 ---
 
 :::{.hero-section style="padding-top: 3rem; padding-bottom: 2rem;"}
 :::{.lead}
-Explore the architectural components, APIs, and formal validation workflows of First Synthesis technologies. This documentation is intended for systems engineers and formal verification researchers.
+Explore the architectural components, APIs, and formal validation workflows of First Synthesis technologies. This documentation serves as a comprehensive guide for systems engineers, AI researchers, and formal verification specialists utilizing the Monist ecosystem.
 :::
 :::
 
-## 1. Monist Engine CLI
+## 1. Ecosystem Architecture
 
-To run the Monist Engine locally and execute paradox evaluations at hardware speed, utilize the included `monist-cli`:
+The First Synthesis tech stack is built around **Monist**, a bare-metal, GPU-accelerated logic engine. Unlike traditional Directed Acyclic Graph (DAG) compilers (which crash upon encountering unstratified or cyclic self-reference), Monist executes unstratified typologies natively. 
 
-```bash
-# Clone the repository
-git clone https://github.com/ryanncode/monist.git
-cd monist
+The architecture is explicitly bifurcated into two environments:
 
-# Run the CPU benching suite
-cargo bench -p monist-bench-cpu
+### 1.1 The Oracle Layer (CPU / Rust)
+The Oracle layer parses standard first-order logic and translates it into an algebraic constraint matrix. 
+- **Kosaraju's SCC Flattening**: Recursively identifies zero-weight semantic cycles within graph topologies, compressing them into singular execution nodes.
+- **Bellman-Ford Topologies**: Evaluates precise thermodynamic weights between interaction boundaries, mathematically bounding `Extensionality Collisions` and returning integer $K$-Iteration depth bounds.
+- **T-Functor Synthesis**: Dynamically injects topological stabilizing operators ($x \mapsto \iota"x$) into Burali-Forti recursions, preventing graph divergence and yielding safe stratification parameters.
 
-# Execute a mathematical diagnostic (e.g., Burali-Forti)
-cargo run --bin burali_forti
+### 1.2 The Interaction Net Backend (WGPU / Combinators)
+Once validated by the Oracle, logic is stripped of alphanumeric variables entirely and converted into pure, untyped de Bruijn combinators ($S, K, I$). 
+- **Autonomous GPU Dispatch**: A dedicated WGSL compute shader manages a native Arena and lock-free FreeList. Graph rewiring is executed via atomic `Compare-And-Swap` (CAS) loops natively in VRAM.
+- **32-Bit Tagged Pointers**: Combinator interaction ports are bit-packed (4-bit tag, 28-bit address) ensuring absolute compatibility across Vulkan, Metal, and WebGPU.
+
+---
+
+## 2. Python Bindings (`monist-python`)
+
+To integrate the Monist topological bounding directly into machine learning pipelines (such as PyTorch, JAX, or LLM inference engines), we provide zero-cost PyO3 bindings via the `monist-python` package.
+
+### Neuro-Symbolic Verification
+By deploying the Monist Engine natively within a Python-based Large Language Model pipeline, engineers can implement **Semantic Self-Verification (SSV)**. As a language model generates sequential logic, the python bindings pass the AST into the Monist Oracle in parallel, instantly checking for paradoxical loops, hallucinated cycles, or geometric extensionality violations, all in $O(1)$ time.
+
+### Quickstart
+```python
+import monist_engine as monist
+
+# Initialize the topological bounds checker
+oracle = monist.Engine(enable_t_functor=True)
+
+# Evaluate a safe hierarchical proposition
+res1 = oracle.evaluate("forall x . x = x")
+print(res1.is_stratified) # True
+
+# Evaluate an Extensionality Collision (Russell's Paradox)
+res2 = oracle.evaluate("{x | ~(x in x)} in {x | ~(x in x)}")
+print(res2.is_stratified) # False
+print(res2.collision_weight) # -1.0
 ```
 
-## 2. NF-Sketches Formal Verification
+---
 
-To rigorously prove that the mathematical bounds executed by Monist are sound, you can pipe the SMT-LIB constraints directly into our Lean 4 formal lab.
+## 3. Formal Verification (`nf-sketches`)
 
-### Environment Setup
+First Synthesis logic is backed by rigorous, machine-checked mathematical theorems written in **Lean 4**. To prove that the Bellman-Ford geometric bounds executed by Monist are sound, we pipe the SMT-LIB constraints directly into our Lean 4 formal lab.
 
-Ensure `elan` is installed and up-to-date. Clone the companion formal proofs repository as a sibling directory to `monist`:
+### Retrieving the Lean 4 Proofs
+Ensure `elan` is installed. Clone the formal proofs repository:
 
 ```bash
 git clone https://github.com/ryanncode/nf-sketches.git
 cd nf-sketches
-```
-
-### Retrieving Dependencies and Building
-
-Fetch the required `mathlib` dependencies and compile the formal proofs using the Lean 4 Lake package manager:
-
-```bash
-lake fetch
-lake build
+lake fetch && lake build
 ```
 
 ### Cross-Language Differential Testing
-
-You can automatically pipe the semantic witnesses generated by the Rust Monist Engine directly into the Lean 4 `parse-strat` interpreter. This proves 1-to-1 equivalence between the geometric bounds of our physical graph execution and our machine-checked theorems.
-
-```bash
-# From the root of the monist repository:
-./scripts/run_differential_tests.sh
-```
-
-For manual piping of specific SMT-LIB blocks:
+You can automatically pipe the semantic witnesses generated by the Rust Monist Engine directly into the Lean 4 `parse-strat` interpreter. This proves 1-to-1 equivalence between the geometric bounds of our physical execution and the machine-checked theorems.
 
 ```bash
-cd tools/monist-examples
-cargo run --bin specker_refutation | awk '/; === BEGIN STRATIFICATION WITNESS ===/{flag=1; print; next} /; === END STRATIFICATION WITNESS ===/{print; flag=0} flag' > out.smt
+# Generate the semantic witness from a known paradox:
+cd monist/tools/monist-examples
+cargo run --bin specker_refutation > specker_witness.smt
+
+# Feed the SMT-LIB into the Lean 4 Topological interpreter:
 cd ../../../nf-sketches/parse-strat
-lake exe parse-strat --ingest-smt < ../../monist/tools/monist-examples/out.smt
+lake exe parse-strat --ingest-smt < ../../monist/tools/monist-examples/specker_witness.smt
 ```
 
-*For complete API mappings and architecture graphs, view the [Rustdoc API Reference](https://ryanncode.github.io/monist/).*
+---
+
+## 4. Interactive Tooling
+
+### Monist Engine CLI
+To run diagnostics and evaluate paradoxes manually, utilize the interactive terminal repl. The CLI visually prints topological graph structures and mathematical trace outputs.
+
+```bash
+cargo run -p monist-cli -- repl
+```
+
+Inside the REPL, use `step "<formula>"` to execute a colored, step-by-step diagnostic of a graph's reduction.
+
+### The WebGPU Console
+The [Interactive Console](interactive-console/index.html) is a WASM-compiled interface allowing direct access to the engine's topology checker directly in your browser. Utilizing the `SC-Bedrock Daemon` and custom Engine toggles, researchers can mathematically explore topological loops (e.g. Quine Atoms, Burali-Forti Bypass) natively in the browser without installing the Rust toolchain.
+
+---
+
+*For absolute source-code level analysis, complete interface contracts, and module maps, view the generated [Rustdoc API Reference](https://ryanncode.github.io/monist/).*
