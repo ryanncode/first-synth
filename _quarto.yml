@@ -7,6 +7,7 @@ project:
     - "interactive-console/**"
 
 website:
+  site-url: https://firstsynth.dev/
   title: "First Synthesis"
   navbar:
     background: "#ffffff"
