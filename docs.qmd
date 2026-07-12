@@ -95,7 +95,7 @@ cargo run -p monist-cli -- repl
 Inside the REPL, use `step "<formula>"` to execute a colored, step-by-step diagnostic of a graph's reduction.
 
 ### The WebGPU Console
-The [Interactive Console](interactive-console/index.html) is a WASM-compiled interface allowing direct access to the engine's topology checker directly in your browser. Utilizing the `SC-Bedrock Daemon` and custom Engine toggles, researchers can mathematically explore topological loops (e.g. Quine Atoms, Burali-Forti Bypass) natively in the browser without installing the Rust toolchain.
+The [Interactive Console](console/index.html) is a WASM-compiled interface allowing direct access to the engine's topology checker directly in your browser. Utilizing the `SC-Bedrock Daemon` and custom Engine toggles, researchers can mathematically explore topological loops (e.g. Quine Atoms, Burali-Forti Bypass) natively in the browser without installing the Rust toolchain.
 
 ---
 

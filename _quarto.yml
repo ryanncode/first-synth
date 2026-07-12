@@ -4,7 +4,7 @@ project:
     - "*.qmd"
   resources:
     - "whitepaper.pdf"
-    - "interactive-console/**"
+    - "console/**"
 
 website:
   site-url: https://firstsynth.dev/
@@ -17,7 +17,7 @@ website:
       - text: "Monist"
         href: monist.qmd
       - text: "Console"
-        href: interactive-console/index.html
+        href: console/index.html
       - text: "NF-Sketches"
         href: nf-sketches.qmd
       - text: "Docs"

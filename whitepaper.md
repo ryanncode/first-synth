@@ -517,4 +517,4 @@ Taelin, Victor. 2024. "HVM2: A Parallel Evaluator for Interaction Combinators." 
 
 Tarjan, Robert. 1972. "Depth-First Search and Linear Graph Algorithms." *SIAM Journal on Computing* 1, no. 2: 146–60.
 
-Wilshaw, S. 2025. "New Foundations Is Consistent." *Github*.
+Wilshaw, Sky. 2025. "New Foundations Is Consistent." *Github*.
