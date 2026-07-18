@@ -38,17 +38,17 @@ Users declare high-level logical constraints and manage goals using interactive 
 
 :::{.g-col-12 .g-col-md-6 style="padding: 1.5rem; background: #fdfdfd; border-radius: 8px; border: 1px solid #eaeaea;"}
 ### 2. The Geometry Layer (CPU Core)
-The engine flattens text syntax into a topological matrix. The CPU executes Kosaraju's algorithm to contract zero-weight equality rings and runs Bellman-Ford shortest-path evaluation to intercept negative-weight paradox loops.
+The engine flattens text syntax into a topological matrix. The CPU executes Tarjan's SCC algorithm to contract zero-weight equality rings in a single pass, and integrates Karp's Minimum Cycle Mean (MCM) to precisely intercept Extensionality Collisions and negative-weight paradox loops.
 :::
 
 :::{.g-col-12 .g-col-md-4 style="padding: 1.5rem; background: #fdfdfd; border-radius: 8px; border: 1px solid #eaeaea;"}
 ### 3. Graph Reduction (The Compiler)
-The compiler destroys alphanumeric variables completely, replacing them with nameless de Bruijn levels and converting the structure into pure, untyped combinators.
+The compiler destroys alphanumeric variables completely, replacing them with nameless de Bruijn levels and converting the structure into pure, untyped combinators mapping to Okasaki Suspensions for lazy evaluation bounding.
 :::
 
 :::{.g-col-12 .g-col-md-4 style="padding: 1.5rem; background: #fdfdfd; border-radius: 8px; border: 1px solid #eaeaea;"}
 ### 4. The Physics Engine (GPU VRAM)
-The hardware executor ships these combinator graphs to WGSL compute shaders. Lock-free atomic nodes physically collide and annihilate in parallel without central synchronization or garbage collection pauses.
+The hardware executor ships these combinator graphs to WGSL compute shaders. Lock-free atomic nodes physically collide and annihilate in parallel utilizing 2-Symmetric Interaction Combinators (2-SIC) rules, securing Lévy-optimality via structural Commutation without central synchronization or garbage collection pauses.
 :::
 
 :::{.g-col-12 .g-col-md-4 style="padding: 1.5rem; background: #fdfdfd; border-radius: 8px; border: 1px solid #eaeaea;"}

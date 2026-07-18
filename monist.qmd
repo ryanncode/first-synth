@@ -18,20 +18,20 @@ Transitioning to geometric validation demands the eradication of abstract syntax
 
 The **Oracle Layer** (`monist-core`) acts as our CPU-bound geometry solver. It transforms raw mathematical expressions into pure topological matrices:
 
-- **Kosaraju's SCC:** Before bounding logic, the system executes Kosaraju’s Strongly Connected Components algorithm. This flattens 0-weight semantic equality rings into representative concept vertices, physically collapsing redundant structural cycles in system RAM.
-- **Bellman-Ford Bounds:** The logic is treated as a spatial constraint problem. The solver assigns directed edges based on logical relations. The Bellman-Ford algorithm verifies these constraints, mathematically proving that variables can populate the matrix without generating a negative-weight cycle. 
+- **Tarjan's SCC:** Before bounding logic, the system executes Tarjan's Strongly Connected Components algorithm. This efficiently flattens 0-weight semantic equality rings into representative concept vertices in a single pass, physically collapsing redundant structural cycles in system RAM.
+- **Bellman-Ford & Karp's MCM Bounds:** The logic is treated as a spatial constraint problem. The solver assigns directed edges based on logical relations. Integrated with Karp's Minimum Cycle Mean, it mathematically proves that variables can populate the matrix without generating a negative-weight cycle, explicitly tracking path sequences for Extensionality Collisions. 
 
 ## 2. Variable Annihilation: The Compiler Layer
 
 Traditional software engineering binds logic to named variables, forcing processors to waste memory bandwidth navigating lookup tables, tracking scopes, and running tracing garbage collectors. The `monist-comb` compiler completely annihilates the lexical environment.
 
-Monist eliminates this overhead entirely by compiling logic into point-free interaction networks where nodes occupy a compressed 64-bit memory word inside a contiguous VRAM arena. By replacing named variables with **De Bruijn indexing** and pure, untyped combinatory logic ($S, K, I$), the compiler reduces math into structural coordinates. 
+Monist eliminates this overhead entirely by compiling logic into point-free interaction networks where nodes occupy a compressed 64-bit memory word inside a contiguous VRAM arena. By replacing named variables with **De Bruijn indexing**, pure untyped combinatory logic ($S, K, I$), and **Okasaki `Susp` structures**, the compiler reduces math into 2-Symmetric Interaction Combinators (2-SIC). 
 
 ## 3. Lock-Free Atomics & Bare-Metal Physics
 
 Parallel GPU threads execute graph transformations using atomic Compare-And-Swap (CAS) spin-loops directly accessing VRAM addresses without central synchronization. Memory reclamation occurs autonomously the exact millisecond a sub-net becomes unreachable via localized Void and Erase collisions, achieving continuous execution at thermodynamic limits without global garbage collection interrupts.
 
-Classical engines crash via stack-overflow when fed paradoxical loops like Russell's Paradox. Monist subverts this through spatial interception. If Bellman-Ford flags a negative-weight cycle (calculating the Minimum Cycle Mean), it intercepts the mathematical impossibility *prior* to hardware scaling, freezing paradoxical regression into safely observable geometric boundaries.
+Classical engines crash via stack-overflow when fed paradoxical loops like Russell's Paradox. Monist subverts this through spatial interception. Formally modeled via **Interaction Monoids**, if the combined Bellman-Ford/MCM limits flag a negative-weight cycle, it intercepts the mathematical impossibility algebraically via **Girard's Execution Formula** *prior* to hardware scaling, freezing paradoxical regression into safely observable geometric boundaries.
 
 ## 4. Topological Recursion Cost as a Deterministic Observable
 
@@ -48,7 +48,7 @@ By superposing complex data streams into hyperdimensional vector spaces, custom 
 :::{style="margin-top: 4rem; margin-bottom: 2rem; padding: 2rem; background: #fafafa; border: 1px solid #eaeaea; border-radius: 8px;"}
 ### The Core Crates
 - [`crates/monist-parser`](https://github.com/ryanncode/monist/tree/main/crates/monist-parser): Parses raw text and ASCII constraints.
-- [`crates/monist-core`](https://github.com/ryanncode/monist/tree/main/crates/monist-core): The Oracle Layer, executing Kosaraju SCC & Bellman-Ford constraints.
+- [`crates/monist-core`](https://github.com/ryanncode/monist/tree/main/crates/monist-core): The Oracle Layer, executing Tarjan SCC & Karp MCM constraints.
 - [`crates/monist-comb`](https://github.com/ryanncode/monist/tree/main/crates/monist-comb): The Interaction Net Backend, hosting the WebGPU (`wgpu`) WGSL compute shaders.
 - [`crates/monist-seq`](https://github.com/ryanncode/monist/tree/main/crates/monist-seq): Sequent calculus evaluation bridging structural rules.
 - [`crates/monist-psg`](https://github.com/ryanncode/monist/tree/main/crates/monist-psg): Phase Space Geometry and spatial boundary check limits.

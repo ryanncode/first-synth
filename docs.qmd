@@ -18,12 +18,12 @@ The architecture is explicitly bifurcated into two environments:
 
 ### 1.1 The Oracle Layer (CPU / Rust)
 The Oracle layer parses standard first-order logic and translates it into an algebraic constraint matrix. 
-- **Kosaraju's SCC Flattening**: Recursively identifies zero-weight semantic cycles within graph topologies, compressing them into singular execution nodes.
-- **Bellman-Ford Topologies**: Evaluates precise thermodynamic weights between interaction boundaries, mathematically bounding `Extensionality Collisions` and returning integer $K$-Iteration depth bounds.
+- **Tarjan's SCC Flattening**: Recursively identifies zero-weight semantic cycles within graph topologies in a single pass, compressing them into singular execution nodes.
+- **Bellman-Ford & Karp's MCM Topologies**: Evaluates precise thermodynamic weights between interaction boundaries, mathematically bounding `Extensionality Collisions` and returning integer $K$-Iteration depth bounds using Karp's Minimum Cycle Mean.
 - **T-Functor Synthesis**: Dynamically injects topological stabilizing operators ($x \mapsto \iota"x$) into Burali-Forti recursions, preventing graph divergence and yielding safe stratification parameters.
 
 ### 1.2 The Interaction Net Backend (WGPU / Combinators)
-Once validated by the Oracle, logic is stripped of alphanumeric variables entirely and converted into pure, untyped de Bruijn combinators ($S, K, I$). 
+Once validated by the Oracle, logic is stripped of alphanumeric variables entirely and converted into pure, untyped de Bruijn combinators ($S, K, I$), bounded by **Okasaki Suspensions** and evaluated natively as **2-Symmetric Interaction Combinators (2-SIC)**. 
 - **Autonomous GPU Dispatch**: A dedicated WGSL compute shader manages a native Arena and lock-free FreeList. Graph rewiring is executed via atomic `Compare-And-Swap` (CAS) loops natively in VRAM.
 - **32-Bit Tagged Pointers**: Combinator interaction ports are bit-packed (4-bit tag, 28-bit address) ensuring absolute compatibility across Vulkan, Metal, and WebGPU.
 

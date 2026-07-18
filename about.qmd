@@ -12,7 +12,7 @@ First Synthesis LLC develops precise mathematical instruments for the post-von-N
 
 :::{.feature-card style="grid-column: 1 / -1;"}
 ### The Dual Architecture Mission
-We specialize in Rust, WGSL compute shaders, and Lean 4 formal theorem proving. The synergy between high-speed physical combinatorial execution (Monist) and rigorous mathematical truth validation (NF-Sketches) creates an unbreakable deterministic bedrock. First Synth was engineered to solve the scaling crisis in deterministic execution, providing a rigid baseline for auditing probabilistic AI agents and infinitely recursive topologies.
+We specialize in Rust, WGSL compute shaders, and Lean 4 formal theorem proving. The synergy between high-speed physical combinatorial execution via single-pass topological tracking and Interaction Monoids (Monist) and rigorous mathematical truth validation (NF-Sketches) creates an unbreakable deterministic bedrock. First Synth was engineered to solve the scaling crisis in deterministic execution, providing a rigid baseline for auditing probabilistic AI agents and infinitely recursive topologies.
 :::
 
 ::::

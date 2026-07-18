@@ -30,6 +30,7 @@ Our Lean 4 repository formalizes the mechanical limits of typestate extraction a
 
 - **[`StratificationSoundness.lean`](https://github.com/ryanncode/nf-sketches/blob/main/nf-validate/NfValidate/StratificationSoundness.lean):** Proving that resolving localized constraint graphs satisfies Quine's rigid type-shifting limits.
 - **[`BellmanFordInvariants.lean`](https://github.com/ryanncode/nf-sketches/blob/main/nf-validate/NfValidate/BellmanFordInvariants.lean):** Mathematically verifying that negative-weight cycle detection correctly identifies non-normalizable proofs (e.g., Russell's Paradox and Specker's Refutation bounds).
+- **Interaction Monoids & Lazy Evaluation:** Validating the algebraic execution topology of **Okasaki Suspensions** via **Girard's Execution Formula** to strictly enforce boundaries on combinatorial friction.
 - **T-Relative Adjunctions:** Utilizing Rosser's Axiom of Counting to process $+2$ typestate elevations in $O(1)$ time without memory explosion.
 
 By establishing a 1-to-1 equivalence between the Rust physical evaluator and the Lean geometric verifier, First Synthesis guarantees that only structurally verified, paradox-free Directed Acyclic Graphs reach the GPU.
